@@ -9,7 +9,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-// Agora recebe 'onNavigate' em vez de 'navController'
 fun MenuScreen(onNavigate: (String) -> Unit) {
     Column(
         modifier = Modifier.fillMaxSize().padding(16.dp),
