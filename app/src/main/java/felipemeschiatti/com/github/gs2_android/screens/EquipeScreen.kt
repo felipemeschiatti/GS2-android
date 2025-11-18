@@ -22,9 +22,9 @@ fun EquipeScreen(onNavigate: (String) -> Unit) {
             Column(modifier = Modifier.padding(16.dp)) {
                 Text(text = "Integrantes:", fontSize = 20.sp, modifier = Modifier.padding(bottom = 8.dp))
 
-                Text(text = "Aluno 1: [Seu Nome] - RM: [Seu RM]", fontSize = 16.sp)
+                Text(text = "Aluno 1: Felipe Pereira Meschiatti - RM: 551978 ", fontSize = 16.sp)
                 Spacer(modifier = Modifier.height(8.dp))
-                Text(text = "Aluno 2: [Nome Dupla] - RM: [RM Dupla]", fontSize = 16.sp)
+                Text(text = "Aluno 2: Caua Fernandes - RM: 551765", fontSize = 16.sp)
             }
         }
 

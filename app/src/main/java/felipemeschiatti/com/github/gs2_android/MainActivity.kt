@@ -8,8 +8,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-
-// Importando as telas do seu pacote screens
 import felipemeschiatti.com.github.gs2_android.screens.LoginScreen
 import felipemeschiatti.com.github.gs2_android.screens.MenuScreen
 import felipemeschiatti.com.github.gs2_android.screens.ImcScreen
@@ -31,11 +29,10 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun AppNavigationManual() {
-    // Variável que controla qual tela está aparecendo
-    // Começa no "login"
+
     var telaAtual by remember { mutableStateOf("login") }
 
-    // Verifica qual é a telaAtual e mostra a tela correspondente
+
     when (telaAtual) {
         "login" -> LoginScreen(onNavigate = { novaTela -> telaAtual = novaTela })
         "menu" -> MenuScreen(onNavigate = { novaTela -> telaAtual = novaTela })
