@@ -13,8 +13,6 @@ import felipemeschiatti.com.github.gs2_android.calcularImc
 import felipemeschiatti.com.github.gs2_android.formatarResultadoImc
 
 @Composable
-// Agora recebe 'onNavigate' em vez de 'navController'
-fun ImcScreen(onNavigate: (String) -> Unit) {
     var nome by remember { mutableStateOf("") }
     var peso by remember { mutableStateOf("") }
     var altura by remember { mutableStateOf("") }
